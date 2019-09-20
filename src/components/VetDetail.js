@@ -9,7 +9,6 @@ const VetDetail = (props) => {
             <Card.Header>{vet.specialty}</Card.Header>
             <Card.Body>
                 <Card.Title>{vet.first_name} {vet.last_name}</Card.Title>
-                <Card.Subtitle></Card.Subtitle>
                 <Card.Text>
                     {vet.address}<br/>
                     {vet.city} {vet.state}

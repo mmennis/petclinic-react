@@ -24,16 +24,14 @@ export default class VetList extends Component {
 
     render() {
         let vetRows = _.chunk(this.state.vets, 4);
-
         return (
-            
             <Container fluid="true">
                 {
-                    vetRows.map((row) => (
-                    <Row>
+                    vetRows.map((row, rowidx) => (
+                    <Row key={rowidx} noGutters="true">
                         {
-                            row.map(vet => 
-                                <Col>
+                            row.map((vet, colidx) => 
+                                <Col key={colidx} >
                                     <VetDetail vet={vet} />
                                 </Col>
                             )
