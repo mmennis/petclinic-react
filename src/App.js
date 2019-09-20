@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import VetList from './components/VetList';
+import Home from './components/Home';
 import HeaderNavigation from './components/HeaderNavigation';
+
+import {BrowserRouter as Router} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <div><HeaderNavigation /></div>
+      <Router>
         <div>
-          <VetList />
+          <div><HeaderNavigation /></div>
+          <div>
+            <Home />
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }
