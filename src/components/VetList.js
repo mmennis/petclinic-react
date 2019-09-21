@@ -28,7 +28,7 @@ export default class VetList extends Component {
             <Container fluid="true">
                 {
                     vetRows.map((row, rowidx) => (
-                    <Row key={rowidx} noGutters="true">
+                    <Row key={rowidx} noGutters="false">
                         {
                             row.map((vet, colidx) => 
                                 <Col key={colidx} >

@@ -6,7 +6,7 @@ export default class HeaderNavigation extends Component {
     render() {
         return (
             <div>
-                <Navbar fixed="top" bg="primary" variant="dark" className="border-bottom border-gray" style={{ height: 50}}>
+                <Navbar fixed="top" bg="primary" variant="dark" className="border-bottom border-gray" >
                     <Navbar.Brand href="/home">Petclinic App</Navbar.Brand>
                     <Nav className="mr-auto">
                         <Nav.Link href="/home">Home</Nav.Link>
