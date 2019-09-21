@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
-import { Route, Switch } from 'react-router-dom'
-import VetList from './VetList';
-import OwnerList from './OwnerList';
-import Home from './Home';
-
 export default class HeaderNavigation extends Component {
 
     render() {
@@ -19,16 +14,7 @@ export default class HeaderNavigation extends Component {
                         <Nav.Link href="/vets">Vets</Nav.Link>
                     </Nav>
                 </Navbar>
-                <div>
-                    <Switch>
-                        <Route path="/home" component={Home} />
-                        <Route path="/vets" component={VetList} />
-                        <Route path="/owners" component={OwnerList} />
-                    </Switch>
-
-                </div>
             </div>
-
         );
     }
 }
